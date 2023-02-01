@@ -11,6 +11,20 @@ Contact.destroy_all
 # - Insert and read contact data for companies in the database
 
 # 1. insert new rows in the contacts table with relationship to a company
+puts "There are #{Company.all.count} companies"
+puts "There are #{Contact.all.count} contacts"
+
+tim = Contact.new
+tim["first_name"] = "Tim"
+tim["last_name"] = "Cook"
+tim["email"] = "Tim@apple.com"
+tim["company_id"] = apple["id"]
+tim.save
+
+# puts tim.inspect
+
+
+
 
 # 2. How many contacts work at Apple?
 
